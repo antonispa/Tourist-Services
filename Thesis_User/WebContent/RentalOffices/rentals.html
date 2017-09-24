@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rentals</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+	$(document).ready(function(){
+			$(rentals).css("background-color","#CD5C5C");
+	});
+</script>
+<style>
+
+.navbar {
+	margin: 0;
+	border-radius: 0;
+}
+
+.navbar-default {
+	background-color: #20B2AA;
+	border: none;
+}
+
+.navbar-default .navbar-nav > li> a {
+	color: white;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: white;
+	background-color: #CD5C5C;
+	text-align: center;
+	display: block;
+}
+
+.navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+	background-color: #CD5C5C;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-collapse {
+	border: none;
+}
+
+h1 {
+	font-family: vollkorn;
+}
+
+@media ( max-width : 766px) {
+	.btn {
+		width: 100%;
+	}
+}
+</style>
+</head>
+<body>
+	
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+			<li><a id="home" href="../index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+			<li><a id="hotels" href="../Hotels/hotels.html">Hotels</a></li>
+			<li><a id="rentals" href="../RentalOffices/rentals.html">Rental Offices</a></li>
+			<li><a id="museums" href="../Museums/museums.jsp">Museums</a></li>
+			<li><a id="landmarks" href="../Landmarks/landmarks.jsp">Landmarks</a></li>
+			<li><a id="flights" href="../Flights/flights.html">Flights</a></li>
+			<li><a id="ships" href="../Ships/ships.html">Ships</a></li>
+			<li><a id="excursions" href="../Excursions/excursions.jsp">Excursion Offices</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+
+	<div class="container">
+		<form id="form" class="form-horizontal" action="RentalSearch.jsp"	method="post" target="_self">
+			<h1>Ready for a ride?</h1>
+			
+			<br><br><br><br>
+			
+
+			<div class="form">
+
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#cars">Cars</a></li>
+					<li><a data-toggle="tab" href="#motors">Motorcycles</a></li>
+				</ul>
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+				<div class="tab-content">			
+					<div id="cars" class="tab-pane fade in active">
+						<a style="float:right" href="cancelcarbooking.html" id="car-cancel"><b>Booking Cancel</b></a>
+						<br><br>
+					
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2" for="car_pickup">Pick-Up:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<input type="date" class="form-control" id="car_pickup" name="car_pickup">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2" for="car_dropoff">Drop-Off:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<input type="date" class="form-control" id="car_dropoff" name="car_dropoff">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2"
+								for="car_cc">Car cc:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<select class="form-control" id="car_cc" name="car_cc">
+									<option>1000</option>
+									<option>1200</option>
+									<option>1600</option>
+									<option>1800</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2"
+								for="passengers">Passengers:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<select class="form-control" id="passengers" name="passengers">
+									<option>2</option>
+									<option>4</option>
+									<option>5</option>
+									<option>7</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2"
+								for="car_category">Category:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<select class="form-control" id="car_category" name="car_category">
+									<option>A</option>
+									<option>B</option>
+									<option>C</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-offset-5 col-md-offset-2">
+							<button type="submit" class="btn btn-info" name="car_search">Search</button>
+						</div>
+					</div>
+					
+					
+					<div id="motors" class="tab-pane fade">
+						<a style="float:right" href="cancelmotorbooking.html" id="motor-cancel"><b>Booking Cancel</b></a>
+						<br><br>
+						
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2" for="motor_pickup">Pick-Up:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<input type="date" class="form-control" id="motor_pickup" name="motor_pickup">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2" for="motor_dropoff">Drop-Off:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<input type="date" class="form-control" id="motor_dropoff" name="motor_dropoff">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2" for="motor_cc">Motorcycle cc:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<select class="form-control" id="motor_cc" name="motor_cc">
+									<option>125</option>
+									<option>200</option>
+									<option>400</option>
+									<option>600</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-12 col-sm-4 col-md-2"
+								for="motor_category">Category:</label>
+							<div class="col-xs-12 col-sm-4 col-md-2">
+								<select class="form-control" id="motor_category" name="motor_category">
+									<option>A</option>
+									<option>B</option>
+									<option>C</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-offset-5 col-md-offset-2">
+							<button type="submit" class="btn btn-info" name="motor_search">Search</button>
+						</div>
+					</div>
+					
+
+				</div>
+			</div>
+		</form>
+		<br><br><br><br><br><br>
+
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" name="hotelsFrame"></iframe>
+		</div>
+
+
+	</div>
+
+</body>
+</html>

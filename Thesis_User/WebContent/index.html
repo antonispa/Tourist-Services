@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(home).css("background-color", "#CD5C5C");
+	})
+</script>
+
+<style>
+
+.navbar {
+	margin: 0;
+	border-radius: 0;
+}
+
+.navbar-default {
+	background-color: #20B2AA;
+	border: none;
+}
+
+.navbar-default .navbar-nav > li> a {
+	color: white;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: white;
+	background-color: #CD5C5C;
+	text-align: center;
+	display: block;
+}
+
+.navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+	background-color: #CD5C5C;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-collapse {
+	border: none;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+p {
+	text-align: justify;
+	font-family: vollkorn;
+}
+
+.footer {
+	background-color: #20B2AA;
+	height: 50px;
+	padding-top:20px;
+}
+
+</style>
+</head>
+
+
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+			<li><a id="home" href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+			<li><a id="hotels" href="Hotels/hotels.html">Hotels</a></li>
+			<li><a id="rentals" href="RentalOffices/rentals.html">Rental Offices</a></li>
+			<li><a id="museums" href="Museums/museums.jsp">Museums</a></li>
+			<li><a id="landmarks" href="Landmarks/landmarks.jsp">Landmarks</a></li>
+			<li><a id="flights" href="Flights/flights.html">Flights</a></li>
+			<li><a id="ships" href="Ships/ships.html">Ships</a></li>
+			<li><a id="excursions" href="Excursions/excursions.jsp">Excursion Offices</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	
+	<!-- <nav class="navbar navbar-color">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a id="home" href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a id="hotels" href="Hotels/hotels.html">Hotels</a></li>
+				<li><a id="rentals" href="RentalOffices/rentals.html">Rental Offices</a></li>
+				<li><a id="museums" href="Museums/museums.jsp">Museums</a></li>
+				<li><a id="landmarks" href="Landmarks/landmarks.jsp">Landmarks</a></li>
+				<li><a id="flights" href="Flights/flights.html">Flights</a></li>
+				<li><a id="ships" href="Ships/ships.html">Ships</a></li>
+				<li><a id="excursions" href="Excursions/excursions.jsp">Excursion Offices</a></li>
+			</ul>
+		</div>
+	</nav> -->
+	
+	<div id="herCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#herCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#herCarousel" data-slide-to="1"></li>
+			<li data-target="#herCarousel" data-slide-to="2"></li>
+		</ol>
+		
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="images/her_1.jpg" alt="Heraklion1" width="100%">
+			</div>
+			
+			<div class="item">
+				<img src="images/her_2.jpg" alt="Heraklion2" width="100%">
+			</div>
+			
+			<div class="item">
+				<img src="images/her_3.jpg" alt="Heraklion3" width="100%">
+			</div>
+		</div>
+		
+		<a class="left carousel-control" href="#herCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		 <a class="right carousel-control" href="#herCarousel" role="button" data-slide="next">
+	    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    	<span class="sr-only">Next</span>
+	  	</a>
+			
+	</div>
+	
+	
+	<br><br><br>
+	
+	<div class="container">
+	
+		<h2>Welcome to Heraklion</h2>
+		<p class="lead">
+			Heraklion is the capital of Crete and one of the Mediterranean region's most fascinating and vibrant cities. It is full of places to discover. 
+			With the current efforts to open up the wonderful mediaeval city centre, it speaks to us of a past full of history and great events that reflect 
+			its strategic geopolitical position at the crossroads of three continents...
+		</p>
+		
+		<br><br>
+		
+		<h2>Travel to Heraklion</h2>
+		<p class="lead">
+			Heraklion is the largest urban centre in Crete, the capital of the region and the economic centre of the island. It is easily reached by plane from all over the world,
+			its international airport is first in charter flights, and by boat from Piraeus and the nearby Greek islands. Travelling within Crete is also very easy with bus connections
+			to most places around the island...
+		</p>
+		
+		<br><br>
+		
+		<h2>Where to stay</h2>
+		<p class="lead">
+			Heraklion offers many fine hotels of A, B and C category, bed and breakfast and rooms for rent, which are host to visitors all the year round, and most tourist, car and 
+			motorbike rental offices facilitate the visitor and give guidance in touring the beautiful island of Crete, its coasts and beautiful countryside...
+		</p>
+		
+		<br><br>
+		
+		<h2>What to see</h2>
+		<p class="lead">
+			Coming to Heraklion for the first time, the visitor nowadays may be somewhat surprised by the changes that are taking place in Crete's capital city; Heraklion is celebrating 
+			its rich history and moving onwards to a future full of potential. The city has opened up in so many ways, making the city a place of discovery. Enjoy walking in one of the most
+			 historic and fascinating cities...
+		</p>
+		
+		<br><br>
+		
+		<h2>What to do</h2>
+		<p class="lead">
+			Heraklion is an exciting city. A wealth of cultural events are organized throughout the year with traditional Cretan music and dance, modern music, dance and theatre, offering to
+			 citizens and visitors alike authentic cultural experiences. Cretan cuisine, based on olive oil, vegetables, fruits, legumes grains and wine, is popular all over the world for its 
+			 health and taste...
+		</p>
+		
+		<br><br>
+		
+		<h2>Whom to ask</h2>
+		<p class="lead">
+			The information office for the visitors of Heraklion City is located in the ground floor of "Aktarika" building (Lions square). Its purpose is to develop tourism activities and 
+			improve the tourism services provided in the city of Heraklion with the edition of tourist information material, brochures, maps etc. The opening hours for the public are 8.30 a.m. 
+			to 14.30 p.m., Monday to Friday.
+		</p>
+	
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">All rights reserved.</span>
+		</div>
+	</footer>
+
+</body>
+</html>
