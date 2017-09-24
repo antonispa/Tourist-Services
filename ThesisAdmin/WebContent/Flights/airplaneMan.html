@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Airplane Management</title>
+<script>
+	function clickFunc(){
+		document.getElementById("airplanesTableBtn").click();
+	}
+</script>
+<style>
+	#airplanesTableBtn {
+		background-color: transparent;
+		border: none;
+	}
+</style>
+</head>
+<body onload="clickFunc()">
+	<form action="/ThesisAdmin/DbConnect" method="post" target="_self">
+		<input type="submit" value="" id="airplanesTableBtn" name="airplanesTableBtn">
+	</form>
+</body>
+</html>

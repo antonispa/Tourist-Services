@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Car Charges Management</title>
+<script>
+	function clickFunc(){
+		document.getElementById("carChargesTableBtn").click();
+	}
+</script>
+<style>
+	#carChargesTableBtn {
+		background-color: transparent;
+		border: none;
+	}
+</style>
+</head>
+<body onload="clickFunc()">
+	<form action="/ThesisAdmin/DbConnect" method="post" target="_self">
+		<input type="submit" value="" id="carChargesTableBtn" name="carChargesTableBtn">
+	</form>
+</body>
+</html>

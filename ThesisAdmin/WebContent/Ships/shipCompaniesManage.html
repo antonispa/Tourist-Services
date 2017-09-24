@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ship Companies Management</title>
+<script>
+	function clickFunc(){
+		document.getElementById("shipCompaniesTableBtn").click();
+	}
+</script>
+<style>
+	#shipCompaniesTableBtn {
+		background-color: transparent;
+		border: none;
+	}
+</style>
+</head>
+<body onload="clickFunc()">
+	<form action="/ThesisAdmin/DbConnect" method="post" target="_self">
+		<input type="submit" value="" id="shipCompaniesTableBtn" name="shipCompaniesTableBtn">
+	</form>
+</body>
+</html>

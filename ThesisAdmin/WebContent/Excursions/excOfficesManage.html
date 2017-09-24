@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Excursion Office Management</title>
+<script>
+	function clickFunc(){
+		document.getElementById("excOfficeTableBtn").click();
+	}
+</script>
+<style>
+	#excOfficeTableBtn {
+		background-color: transparent;
+		border: none;
+	}
+</style>
+</head>
+<body onload="clickFunc()">
+	<form action="/ThesisAdmin/DbConnect" method="post" target="_self">
+		<input type="submit" value="" id="excOfficeTableBtn" name="excOfficeTableBtn">
+	</form>
+</body>
+</html>

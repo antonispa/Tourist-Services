@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	function clickFunc(){
+		document.getElementById("museumsTableBtn").click();
+	}
+</script>
+<style>
+	#museumsTableBtn {
+		background-color: transparent;
+		border: none;
+	}
+</style>
+<body onload="clickFunc()">
+	<form action="/ThesisAdmin/DbConnect" method="post" target="_self">
+		<input type="submit" value="" id="museumsTableBtn" name="museumsTableBtn">
+	</form>
+</body>
+</html>

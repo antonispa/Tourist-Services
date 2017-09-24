@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Room's Management</title>
+<script>
+	function clickFunc(){
+		document.getElementById("roomTableBtn").click();
+	}
+</script>
+<style>
+	#roomTableBtn {
+		background-color: transparent;
+		border: none;
+	}
+</style>
+</head>
+<body onload="clickFunc()">
+	<form action="/ThesisAdmin/DbConnect" method="post" target="_self">
+		<input type="submit" value="" id="roomTableBtn" name="roomTableBtn">
+	</form>
+</body>
+</html>
